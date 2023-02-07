@@ -12,10 +12,10 @@
     "build-prod": "parcel build src/index.html"
   },
   "dependencies": {
-    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "sass-loader": "^13.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -23,6 +23,6 @@
     "@babel/preset-react": "^7.12.10",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.2.1",
-    "sass": "^1.32.5"
+    "sass": "^1.58.0"
   }
 }
