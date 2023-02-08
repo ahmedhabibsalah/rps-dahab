@@ -21,19 +21,19 @@ const Game = ({ score, myChoice, setScore }) => {
       setScore(score + 1);
     } else if (myChoice === "rock" && house === "paper") {
       setPlayerWin("lose");
-      setScore(score - 1);
+      setScore(score < 0 ? -1 : 0);
     } else if (myChoice === "scissors" && house === "paper") {
       setPlayerWin("win");
       setScore(score + 1);
     } else if (myChoice === "scissors" && house === "rock") {
       setPlayerWin("lose");
-      setScore(score - 1);
+      setScore(score < 0 ? -1 : 0);
     } else if (myChoice === "paper" && house === "rock") {
       setPlayerWin("win");
       setScore(score + 1);
     } else if (myChoice === "paper" && house === "scissors") {
       setPlayerWin("lose");
-      setScore(score - 1);
+      setScore(score < 0 ? -1 : 0);
     } else if (!myChoice) {
       setPlayerWin("lose");
     } else {
